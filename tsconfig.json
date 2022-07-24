@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        //Saída da compilação para JavaScript
+        "outDir": "app/dist/js",
+        //versão do EcmaScript a ser utilizado
+        "target": "ES6",
+        //Não vai compilar em caso de erro
+        "noEmitOnError": true,
+        //não vai permitir o tipo Any de forma implícita
+        "noImplicitAny": true,
+        //Removerá os comentários dos códigos
+        "removeComments": true,
+        //Não tratará retornos de nulos de forma automática
+        "strictNullChecks": true,
+        //Permite utilizar decorators
+        "experimentalDecorators": true,
+        //Permitir que arquivos .js sejam copiados
+        "allowJs": true,
+        //Permite mapear os arquivos ts no debugger
+        "sourceMap": true,
+    },
+    //Diretório que será monitorado para ser compilado
+    "include": [
+        "app/src/**/*"
+    ]
+}

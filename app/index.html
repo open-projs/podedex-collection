@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="./dist/css/sass/bootstrap.css" rel="stylesheet">
+    <link href="./dist/css/local.css" rel="stylesheet">
+
+    <title>Pokemon</title>
+</head>
+
+<body>
+
+
+    <div id="pesquisa" class="container d-print-none">
+        <div class="row">
+
+            <div class="col-12">
+                <form class="form-control">
+                    <div class="col-auto">
+                        <label class="form-label " for="files">Escolher arquivos</label>
+                        <div id="form-pokedex" class="input-group">
+                            <input id="files" class="form-control" type="file" arial-label="Digite algo"
+                                placeholder="Selecione os arquivos" accept="image/png, image/jpg, image/jpeg" multiple
+                                required>
+                        </div>
+
+                    </div>
+                    <div class="col-3">
+                        <label class="form-label mt-4" for="paginacao">
+                            Selecione a quantidade de Paginação:
+                        </label>
+                        <div class="input-group col-3">
+                            <input class="form-control" id="quantidadeItensPagina" type="number" min="1" required>
+                            <button class="btn btn-success" type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+    <div id="pokedex" class="container-fluid p-2">
+        <h1 id="titulo" class="text-center bg-dark bg-gradient text-white rounded invisible" data-visibilidade> Pokedex
+        </h1>
+        <div class="row">
+
+        </div>
+    </div>
+
+    <div id="paginacao" class="container-fluid d-print-none -invisible" data-visibilidade>
+        <div class="row">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous" data-anterior>
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item" aria-current="page">
+                        <input id="pagina" class="page-link text-center" type="number" min="1" value="1" required>
+                        </span>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next" data-proximo><span
+                                aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#" data-play>Ir para seleção</a></li>
+                </ul>
+            </nav>
+            <p class="text-center">50 páginas</p>
+        </div>
+    </div>
+
+    <script type="module" src="./dist/js/app.js"></script>
+
+</body>
+
+</html>
